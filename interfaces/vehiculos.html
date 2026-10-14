@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta name="description" content="Explora la flota de AA Rent a Car y consulta disponibilidad por WhatsApp." data-i18n-content="vehicles_meta">
+  <link rel="stylesheet" href="vehiculos.css">
+  <script src="../i18n.js" defer></script>
+  <script src="vehiculos.js" defer></script>
+  <title data-i18n="vehicles_document_title">Vehículos | AA RENT A CAR</title>
+</head>
+<body>
+  <header class="encabezado">
+    <a class="marca" href="../index.html" aria-label="AA Rent a Car, inicio">
+      <img src="../assets/WhatsApp_Image_2026-10-07_at_2.36.18_PM-removebg-preview.png" alt="AA Rent a Car">
+    </a>
+    <nav aria-label="Navegación principal" data-i18n-aria-label="nav_label">
+      <a href="../index.html" data-i18n="nav_home">Inicio</a>
+      <a href="vehiculos.html" aria-current="page" data-i18n="nav_vehicles">Vehículos</a>
+      <div class="selector-idioma-contenedor">
+        <span class="solo-lectores" id="etiqueta-idioma" data-i18n="language_label">Idioma</span>
+        <select class="selector-idioma" aria-hidden="true" tabindex="-1" hidden>
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+      <a href="https://wa.me/50585338738" target="_blank" rel="noopener noreferrer" data-i18n="contact">Contáctanos</a>
+    </nav>
+  </header>
+
+  <main class="contenido">
+    <section class="presentacion" aria-labelledby="titulo-principal">
+      <p class="etiqueta">AA RENT A CAR · <span data-i18n="nicaragua">NICARAGUA</span></p>
+      <h1 id="titulo-principal" data-i18n="vehicles_heading">Renta el vehículo ideal para tu próxima aventura.</h1>
+    </section>
+
+    <section class="buscador-flota" aria-label="Filtros para buscar vehículos" data-i18n-aria-label="vehicle_filters">
+      <form id="filtros-vehiculos">
+        <fieldset class="filtros-grupo">
+          <legend class="solo-lectores" data-i18n="search_filters">Filtros de búsqueda</legend>
+          <div class="campo-filtro campo-filtro-ubicacion">
+            <span id="ubicacion-etiqueta" data-i18n="location">Ubicación</span>
+            <select id="ubicacion" name="ubicacion">
+              <option value="" data-i18n="select_location">Selecciona una ubicación</option>
+              <option value="León" data-i18n="leon">León</option>
+              <option value="Managua" data-i18n="managua">Managua</option>
+              <option value="Granada" data-i18n="granada">Granada</option>
+            </select>
+          </div>
+          <label class="campo-filtro">
+            <span data-i18n="pickup_date">Fecha de entrega</span>
+            <input id="fecha-entrega" name="entrega" type="date">
+          </label>
+          <label class="campo-filtro">
+            <span data-i18n="return_date">Fecha de devolución</span>
+            <input id="fecha-devolucion" name="devolucion" type="date">
+          </label>
+          <div class="campo-filtro campo-filtro-tipo">
+            <span id="tipo-vehiculo-etiqueta" data-i18n="vehicle_type">Tipo de vehículo</span>
+            <select id="tipo-vehiculo" name="tipo">
+              <option value="" data-i18n="all_types">Todos los tipos</option>
+              <option value="pickup" data-i18n="pickup">Pickup</option>
+              <option value="suv">SUV</option>
+            </select>
+          </div>
+          <button class="boton-buscar" type="submit" data-i18n="search_vehicles">Buscar vehículos</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <div class="catalogo-encabezado">
+        <div>
+          <h2 id="titulo-catalogo" data-i18n="catalog_options">Opciones de referencia</h2>
+          <p id="cantidad-resultados" class="cantidad-resultados" aria-live="polite"></p>
+        </div>
+        <div class="orden-resultados">
+          <span id="orden-etiqueta" data-i18n="sort_by">Ordenar por</span>
+          <select id="orden-vehiculos" aria-labelledby="orden-etiqueta">
+            <option value="recommended" data-i18n="recommended">Recomendados</option>
+            <option value="type" data-i18n="vehicle_type">Tipo de vehículo</option>
+          </select>
+        </div>
+      </div>
+      <div id="lista-vehiculos" class="lista-vehiculos" aria-live="polite"></div>
+      <p id="sin-resultados" class="sin-resultados" hidden data-i18n="no_results">No encontramos vehículos con esa búsqueda.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <a href="../index.html" data-i18n="back_home">Volver al inicio</a>
+    <span data-i18n="leon_nicaragua">AA Rent a Car · León, Nicaragua</span>
+  </footer>
+</body>
+</html>
