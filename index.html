@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>AA RENT A CAR</title>
+</head>
+<body>
+  <header class="encabezado-principal">
+    <a class="marca-principal" href="#inicio" aria-label="AA Rent a Car, inicio">
+      <img src="assets/WhatsApp_Image_2026-10-07_at_2.36.18_PM-removebg-preview.png" alt="AA Rent a Car">
+    </a>
+    <nav class="navegacion-principal" aria-label="Navegación principal" data-i18n-aria-label="nav_label">
+      <a href="#inicio" data-i18n="nav_home">Inicio</a>
+      <a href="interfaces/vehiculos.html" data-i18n="nav_vehicles">Vehículos</a>
+    </nav>
+    <div class="acciones-encabezado">
+      <div class="selector-idioma-contenedor">
+        <span class="solo-lectores" id="etiqueta-idioma" data-i18n="language_label">Idioma</span>
+        <select class="selector-idioma" aria-hidden="true" tabindex="-1" hidden>
+          <option value="es">ES</option>
+          <option value="en">EN</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+      <a class="contacto-principal" href="https://wa.me/50585338738" target="_blank" rel="noopener noreferrer">
+        <span data-i18n="contact">Contactar</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="inicio-alquiler" id="inicio" aria-labelledby="titulo-inicio">
+      <div class="panel-inicio">
+        <div class="introduccion-inicio">
+          <p class="etiqueta-inicio" data-i18n="hero_eyebrow">ALQUILA EL VEHÍCULO IDEAL</p>
+          <h1 id="titulo-inicio" data-i18n="home_heading">Encuentra el vehículo ideal para tu próximo viaje.</h1>
+          <p class="subtitulo-inicio" data-i18n="home_subtitle">Autos modernos, seguros y al mejor precio. Reserva en minutos y disfruta del camino.</p>
+        </div>
+
+        <form class="filtros" action="#" method="get">
+          <fieldset class="filtros-grupo">
+            <legend data-i18n="find_vehicle">Encuentra tu vehículo</legend>
+            <label>
+              <span data-i18n="location">Ubicación</span>
+              <select name="ubicacion">
+                <option value="" data-i18n="select_location">Selecciona una ubicación</option>
+                <option value="leon" data-i18n="leon">León</option>
+                <option value="managua" data-i18n="managua">Managua</option>
+                <option value="granada" data-i18n="granada">Granada</option>
+              </select>
+            </label>
+            <label>
+              <span data-i18n="pickup_date">Fecha de entrega</span>
+              <input type="date" name="entrega">
+            </label>
+            <label>
+              <span data-i18n="return_date">Fecha de devolución</span>
+              <input type="date" name="devolucion">
+            </label>
+            <label>
+              <span data-i18n="vehicle_type">Tipo de vehículo</span>
+              <select name="tipo">
+                <option value="" data-i18n="all_types">Todos los tipos</option>
+                <option value="suv">SUV</option>
+                <option value="pickup" data-i18n="pickup">Pickup</option>
+                <option value="sedan" data-i18n="sedan">Sedán</option>
+              </select>
+            </label>
+            <button type="submit" data-i18n="search_vehicles">Buscar vehículos</button>
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="vehiculos-inicio" id="vehiculos" aria-labelledby="titulo-vehiculos-inicio">
+      <div class="encabezado-seccion">
+        <div>
+          <h2 id="titulo-vehiculos-inicio" data-i18n="featured_vehicles">Nuestros vehículos</h2>
+          <p class="descripcion-seccion" data-i18n="featured_vehicles_description">Encuentra el auto perfecto para tu viaje. Calidad, confort y seguridad.</p>
+        </div>
+        <a class="enlace-ver-todos" href="interfaces/vehiculos.html"><span data-i18n="explore_all">Ver todos</span><span aria-hidden="true">→</span></a>
+      </div>
+      <div class="vehiculos-inicio-lista">
+        <article class="vehiculo-inicio vehiculo-inicio-pickup">
+          <img
+            class="vehiculo-inicio-imagen"
+            src="assets/ruleta/WhatsApp Image 2026-10-07 at 2.35.33 PM.jpeg"
+            alt="Pickup Mitsubishi L200 doble cabina"
+            data-i18n-alt="pickup_alt"
+            loading="lazy"
+          >
+          <div class="vehiculo-inicio-detalles">
+            <span class="vehiculo-inicio-tipo" data-i18n="pickup">Pickup</span>
+            <h3 data-i18n="featured_pickup">Pickup doble cabina</h3>
+            <p data-i18n="pickup_description">Espacio y capacidad para acompañarte en tus planes.</p>
+            <a href="https://wa.me/50585338738?text=Hola%2C%20quisiera%20consultar%20por%20la%20pickup%20doble%20cabina." target="_blank" rel="noopener noreferrer">
+              <span data-i18n="whatsapp_inquiry">Consultar por WhatsApp</span> <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+        <article class="vehiculo-inicio vehiculo-inicio-suv">
+          <img
+            class="vehiculo-inicio-imagen"
+            src="assets/ruleta/WhatsApp Image 2026-10-07 at 2.35.40 PM.jpeg"
+            alt="Vehículo SUV Mitsubishi Outlander Sport"
+            data-i18n-alt="suv_alt"
+            loading="lazy"
+          >
+          <div class="vehiculo-inicio-detalles">
+            <span class="vehiculo-inicio-tipo">SUV</span>
+            <h3>SUV</h3>
+            <p data-i18n="suv_description">Comodidad para recorrer la ciudad y la carretera.</p>
+            <a href="https://wa.me/50585338738?text=Hola%2C%20quisiera%20consultar%20por%20la%20SUV." target="_blank" rel="noopener noreferrer">
+              <span data-i18n="whatsapp_inquiry">Consultar por WhatsApp</span> <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pasos-inicio" id="como-funciona" aria-labelledby="titulo-pasos">
+      <div class="encabezado-seccion">
+        <p class="etiqueta-inicio" data-i18n="easy_direct">FÁCIL Y DIRECTO</p>
+        <h2 id="titulo-pasos" data-i18n="three_steps">Tu viaje empieza en tres pasos</h2>
+      </div>
+      <div class="pasos-grid">
+        <article class="paso-inicio">
+          <img src="assets/pasos-inicio/paso-01-detalles-actualizado.jpg" alt="" loading="lazy">
+          <span class="paso-numero">01</span>
+          <h3 data-i18n="step1_title">Elige tus detalles</h3>
+          <p data-i18n="step1_description">Indica dónde y cuándo necesitas tu vehículo.</p>
+        </article>
+        <article class="paso-inicio">
+          <img src="assets/pasos-inicio/paso-02-vehiculos-actualizado.jpg" alt="" loading="lazy">
+          <span class="paso-numero">02</span>
+          <h3 data-i18n="step2_title">Explora los vehículos</h3>
+          <p data-i18n="step2_description">Revisa nuestras opciones SUV y pickup en esta página.</p>
+        </article>
+        <article class="paso-inicio">
+          <img src="assets/pasos-inicio/paso-03-contacto.jpg" alt="" loading="lazy">
+          <span class="paso-numero">03</span>
+          <h3 data-i18n="step3_title">Consulta con nosotros</h3>
+          <p data-i18n="step3_description">Escríbenos directamente para confirmar disponibilidad.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-inicio" id="nosotros">
+    <div class="pie-marca">
+      <strong>AA Rent a Car</strong>
+      <span data-i18n="leon_nicaragua">León, Nicaragua</span>
+      <span data-i18n="address">Pali Guadalupe, 1 cuadra al norte y 2.5 cuadras al este, León 21000, Nicaragua</span>
+    </div>
+    <div class="pie-contacto" id="contacto">
+      <a href="tel:+50585338738">+505 8533 8738</a>
+      <span data-i18n="open_24_7">Atención las 24 horas, todos los días</span>
+      <a href="https://maps.app.goo.gl/5DpGx9fq8b9H1tyN8" target="_blank" rel="noopener noreferrer"><span data-i18n="google_maps">Cómo llegar en Google Maps</span> ↗</a>
+    </div>
+    <div class="pie-redes">
+      <h2 data-i18n="follow_us">Síguenos</h2>
+      <div class="iconos-redes" aria-label="Redes sociales de AA Rent a Car" data-i18n-aria-label="social_networks">
+        <a href="https://www.instagram.com/rent_a_car_aa_2026/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de AA Rent a Car">
+          <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="" width="24" height="24">
+        </a>
+        <a href="https://www.tiktok.com/@aarentacar6" target="_blank" rel="noopener noreferrer" aria-label="TikTok de AA Rent a Car">
+          <img src="https://cdn.simpleicons.org/tiktok/FFFFFF" alt="" width="24" height="24">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61594082246261" target="_blank" rel="noopener noreferrer" aria-label="Facebook de AA Rent a Car">
+          <img src="https://cdn.simpleicons.org/facebook/0866FF" alt="" width="24" height="24">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <a
+    class="whatsapp-flotante"
+    href="https://wa.me/50585338738"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contáctanos por WhatsApp"
+    data-i18n-aria-label="whatsapp_label"
+  >
+    <span class="whatsapp-globo" data-i18n="contact">Contáctanos</span>
+    <img src="https://cdn.simpleicons.org/whatsapp/FFFFFF" alt="" width="28" height="28">
+  </a>
+  <script src="i18n.js" defer></script>
+</body>
+</html>
