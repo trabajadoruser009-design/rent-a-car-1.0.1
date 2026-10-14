@@ -1,0 +1,33 @@
+PALETA DE COLORES DEL LOGO AA RENT A CAR
+
+La paleta de colores del logo de AA Rent a Car combina azul, naranja, verde y amarillo. Estos son los colores principales aproximados para utilizar en diseños, publicidad, redes sociales o páginas web.
+
+COLORES PRINCIPALES
+
+Azul corporativo
+Letras “A” y detalles del vehículo
+#0876A8
+
+Naranja
+Letra “A” central
+#F39218
+
+Verde
+Parte superior del diseño del automóvil
+#159447
+
+Amarillo dorado
+Línea inferior del automóvil
+#E6C63A
+
+Azul petróleo
+Texto “Rent a Car” y contornos oscuros
+#07536D
+
+VISTA GENERAL DE LA PALETA
+
+Los códigos HEX son estimaciones visuales tomadas del logo; pueden variar ligeramente respecto a los colores originales del archivo.
+
+RECOMENDACIÓN DE USO
+
+Utiliza el azul como color principal de la marca, el naranja como acento y el verde y amarillo como colores complementarios. Esta combinación mantiene la identidad visual del logo y funciona bien para anuncios, uniformes y publicaciones digitales.
