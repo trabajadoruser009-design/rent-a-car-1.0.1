@@ -1798,8 +1798,8 @@ a.categoria-inicio:focus-visible {
 }
 
 .marca-principal img {
-  width: 220px;
-  height: 68px;
+  width: 260px;
+  height: 80px;
 }
 
 .navegacion-principal {
@@ -2036,6 +2036,7 @@ a.categoria-inicio:focus-visible {
   .vehiculo-inicio {
     grid-template-rows: 210px auto;
   }
+
 }
 
 @media (max-width: 600px) {
@@ -2224,6 +2225,13 @@ a.categoria-inicio:focus-visible {
   .navegacion-principal > a {
     font-size: clamp(12px, 1.5vw, 14px);
     white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .marca-principal img {
+    width: 140px;
+    height: 58px;
   }
 }
 
